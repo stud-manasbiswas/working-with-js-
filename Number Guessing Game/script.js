@@ -21,7 +21,7 @@ while(running == true){
         console.log("your guess is wrong")
         console.log(`the correct  guess is `, Math.ceil(random))
     }
-
+12
     console.log(typeof guess,guess);
     running = false;
 }
