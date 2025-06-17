@@ -1,0 +1,25 @@
+body{
+    margin:0;
+    background-image: url(asset/244370-manhattanhenge-on-times-square.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:rgb(5, 5, 5);
+}
+#clock-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+    height: 100vh;
+    
+}
+#clock{
+    font-family: monospace;
+    font-size: 6.5rem;
+    font-weight: bold;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    border-radius: 5px;
+
+}
