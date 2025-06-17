@@ -83,3 +83,5 @@ console.log(cubes);
 
 const evenNum = num.filter((element)=> element % 2 === 0 )
 console.log(evenNum)
+
+// rem! : filter function is used to return the new array elements based oin condition
