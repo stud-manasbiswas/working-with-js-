@@ -3,7 +3,6 @@ const weatherForm = document.querySelector(".WeatherForm");
 const cityInput = document.querySelector(".cityInput");
 const card = document.querySelector(".card");
 
-const apikey = "1ad8ff0a1158ce6c68851dfd28a1c54b";
 
 // Event listener
 weatherForm.addEventListener("submit", async (event) => {
@@ -38,7 +37,7 @@ async function getWeatherData(city) {
     return data;
 }
 
-// Display weather info in the card
+
 function displayWeatherInfo(data) {
     const { name } = data;
     const temp = Math.round(data.main.temp);
@@ -57,7 +56,7 @@ function displayWeatherInfo(data) {
     card.style.display = "flex";
 }
 
-// Emoji based on weather condition code
+
 function getWeatherEmoji(weatherId) {
     if (weatherId >= 200 && weatherId < 300) {
         return "⛈️"; // Thunderstorm
@@ -74,11 +73,11 @@ function getWeatherEmoji(weatherId) {
     } else if (weatherId > 800 && weatherId < 900) {
         return "☁️"; // Clouds
     } else {
-        return "❓"; // Unknown
+        return "❓"; // kya pta
     }
 }
 
-// Display error message in card
+
 function displayError(message) {
     card.innerHTML = `<p class="errorDisplay">${message}</p>`;
     card.style.display = "flex";
